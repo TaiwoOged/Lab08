@@ -1,8 +1,8 @@
 package com.example.lab08;
 
 public class City {
-    private String city;
-    private String province;
+    private final String city;
+    private final String province;
 
     public City(String city, String province){
         this.city = city;
@@ -27,6 +27,7 @@ public class City {
                 && this.province.equals(cityObj.province);
     }
 
+    //This comment means nothing
     @Override
     public int hashCode() {
         return city.hashCode() + province.hashCode();
